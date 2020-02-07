@@ -1,0 +1,35 @@
+{
+  "name": "log4js-config",
+  "version": "1.0.0",
+  "description": "log4js的封装，便于使用",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "upgrade": "./node_modules/.bin/npm-check -u",
+    "eslint": "./node_modules/.bin/eslint ./ --fix",
+    "check": "npm run eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HandsomeTea/log4js-config.git"
+  },
+  "keywords": [
+    "log4js"
+  ],
+  "author": "coco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HandsomeTea/log4js-config/issues"
+  },
+  "homepage": "https://github.com/HandsomeTea/log4js-config#readme",
+  "dependencies": {
+    "log4js": "^6.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "npm-check": "^5.9.0"
+  }
+}
