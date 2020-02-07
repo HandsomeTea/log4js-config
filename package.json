@@ -31,5 +31,16 @@
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
     "npm-check": "^5.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "git status"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "npm run eslint"
+    ]
   }
 }
